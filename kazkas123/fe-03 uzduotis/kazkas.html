@@ -5,14 +5,25 @@
     <title></title>
     <meta charset="UTF-8">
     <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+
+
+        .a {
+            transform: rotate(180deg);
+
+        }
+
         .šachmatai {
-            border-spacing: 0;
+            border-spacing: 1px;
             border-collapse: collapse;
         }
 
-        .šachmatai th {
-            padding: 5px;
-        }
+
 
         .šachmatai td {
             border: 1px solid;
@@ -21,29 +32,29 @@
 
         }
 
-        .šachmatai .balta {
-            background: #eee;
-            width: 80px;
-            font-size:50px;
-            text-align: center;
-            vertical-align: middle;
-            display:table-cell
-
-            
-        }
-
-        .šachmatai .juoda {
-            background: rgb(80, 80, 80);
+        .balta {
+            background: rgb(255, 255, 255);
             width: 80px;
             font-size: 50px;
             text-align: center;
             vertical-align: middle;
-            display:table-cell;
+            
+
+
+        }
+
+        .juoda {
+            background: rgb(70, 70, 70);
+            width: 80px;
+            font-size: 50px;
+            text-align: center;
+            vertical-align: middle;
+            
         }
     </style>
 </head>
 
-<body>
+<body class="qwerty">
     <table class="šachmatai">
         <tbody>
             <tr>
@@ -56,6 +67,7 @@
                 <th>f</th>
                 <th>g</th>
                 <th>h</th>
+                <th></th>
             </tr>
             <tr>
                 <th>8</th>
@@ -67,7 +79,7 @@
                 <td class="juoda">&#9821;</td>
                 <td class="balta">&#9822;</td>
                 <td class="juoda">&#9820;</td>
-                <th>8</th>
+                <th class="a">8</th>
             </tr>
             <tr>
                 <th>7</th>
@@ -79,7 +91,7 @@
                 <td class="balta">&#9823;</td>
                 <td class="juoda">&#9823;</td>
                 <td class="balta">&#9823;</td>
-                <th>7</th>
+                <th class="a">7</th>
             </tr>
             <tr>
                 <th>6</th>
@@ -91,7 +103,7 @@
                 <td class="juoda"></td>
                 <td class="balta"></td>
                 <td class="juoda"></td>
-                <th>6</th>
+                <th class="a">6</th>
             </tr>
             <tr>
                 <th>5</th>
@@ -103,7 +115,7 @@
                 <td class="balta"></td>
                 <td class="juoda"></td>
                 <td class="balta"></td>
-                <th>5</th>
+                <th class="a">5</th>
             </tr>
             <tr>
                 <th>4</th>
@@ -115,7 +127,7 @@
                 <td class="juoda"></td>
                 <td class="balta"></td>
                 <td class="juoda"></td>
-                <th>4</th>
+                <th class="a">4</th>
             </tr>
             <tr>
                 <th>3</th>
@@ -127,7 +139,7 @@
                 <td class="balta"></td>
                 <td class="juoda"></td>
                 <td class="balta"></td>
-                <th>3</th>
+                <th class="a">3</th>
             </tr>
             <tr>
                 <th>2</th>
@@ -139,7 +151,7 @@
                 <td class="juoda">&#9823;</td>
                 <td class="balta">&#9823;</td>
                 <td class="juoda">&#9823;</td>
-                <th>2</th>
+                <th class="a">2</th>
             </tr>
             <tr>
                 <th>1</th>
@@ -151,18 +163,19 @@
                 <td class="balta">&#9821;</td>
                 <td class="juoda">&#9822;</td>
                 <td class="balta">&#9820;</td>
-                <th>1</th>
+                <th class="a">1</th>
             </tr>
             <tr>
                 <th></th>
-                <th>a</th>
-                <th>b</th>
-                <th>c</th>
-                <th>d</th>
-                <th>e</th>
-                <th>f</th>
-                <th>g</th>
-                <th>h</th>
+                <th class="a">a</th>
+                <th class="a">b</th>
+                <th class="a">c</th>
+                <th class="a">d</th>
+                <th class="a">e</th>
+                <th class="a">f</th>
+                <th class="a">g</th>
+                <th class="a">h</th>
+                <th></th>
             </tr>
         </tbody>
     </table>
