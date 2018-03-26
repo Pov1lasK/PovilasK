@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>fe-04</title>
+</head>
+<style>
+    .kvadratas {
+        width: 25vw;
+        height: 25vw;
+        background-color: darkcyan;
+        margin-bottom: 1px;
+        text-align: right;
+    }
+
+    .container {
+
+        width: 100%;
+        height: 62.5vw;
+        background-color: cyan;
+    }
+
+    .stroked {
+
+        width: 25vw;
+        height: 25vw;
+        background-color: blueviolet;
+        border: 5px solid black;
+        text-align: center;
+    }
+
+    .block{
+
+        width: 25vw;
+        height: 25vw;
+        background-color: #ff0000;
+        display: inline-block;
+        align:left;
+    }
+
+    .rectangle {
+
+        width: 60%;
+        height: 25vw;
+        background: palevioletred;
+    }
+
+    .rectangle_stroked {
+        width: 60%;
+        height: 25vw;
+        background-color: yellow;
+
+    }
+    .th{
+        text-align: right
+    } 
+</style>
+
+<body>
+    <!--- Pirma dalis -->
+
+    <div class=container>
+        <div class=kvadratas>block</div>
+        <div class=kvadratas>block</div>
+    </div>
+    <!--- Antra dalis -->
+
+    <div class=stroked>block stroked</div>
+    <!--- Trecia dalis -->
+    <div class=rectangle>
+        <div class=block></div>
+        <div class=th>rectangle stroked</div>
+    </div>
+
+    <!--- Ketvirta dalis -->
+    <div class="rectangle_stroked"></div>
+</body>
+
+</html>
