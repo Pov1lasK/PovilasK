@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .circle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            opacity: 0.5;
+            border-radius: 50%;
+            border: 8px solid black;
+        }
+
+
+        #second {
+            position: relative;
+            left: 92px;
+            top: 4px;
+            background: yellow;
+
+        }
+
+        #first {
+            background: blue;
+        }
+
+
+
+
+        #third {
+            position: relative;
+            top: -70px;
+            left: 40px;
+            background: red;
+        }
+
+        #problem {
+            font-size: 52pt;
+            color: white;
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-left: 2px solid red;
+            border-top: 2px solid red;
+            top: 41px;
+            left: 71px;
+            z-index: -4;
+            background: red;
+        }
+
+        #problem:after {
+            position: absolute;
+            content: " ";
+            background: white;
+            width: 150px;
+            height: 150px;
+            top: -2px;
+            left: -2px;
+            border-radius: 50%;
+            z-index: -3;
+        }
+
+        .container {
+            width: 270px;
+            height: 270px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nec velit a eleifend. Integer vitae risus vitae
+        lectus lobortis porta et eu eros. Etiam in volutpat elit. Etiam fringilla mattis mollis. Nunc ullamcorper dui diam,
+        ac malesuada augue consectetur quis. Curabitur quis tristique purus. Mauris feugiat mi nec volutpat sollicitudin.
+        Nam non ligula tincidunt, ultrices quam ac, porta enim. Quisque ut eleifend odio. Nam iaculis ipsum quis rhoncus
+        pharetra. Nam laoreet ligula congue quam aliquet elementum. Nulla ante eros, aliquam sit amet enim id, lacinia pretium
+        metus. Praesent vel ipsum elit. Donec efficitur lectus ipsum, vitae tincidunt nunc placerat id. Curabitur ac tincidunt
+        elit. Donec sit amet facilisis metus. Nulla maximus egestas dolor et ultrices. Sed nisl urna, pretium quis tincidunt
+        id, tristique non eros. Donec et mauris vulputate, scelerisque lacus sed, venenatis risus. Aenean consectetur erat
+        non enim placerat vestibulum. Nullam ut pellentesque dolor. Ut sagittis nisl nec lectus viverra aliquam.</p>
+    <div class=container>
+        <div id=first class=circle>R</div>
+        <div id=second class=circle>P</div>
+        <div id=third class=circle>G</div>
+    </div>
+</body>
+
+</html>
