@@ -1,92 +1,87 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Užduotis nomer šest</title>
     <style>
-        .circle {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            opacity: 0.5;
-            border-radius: 50%;
-            border: 8px solid black;
-        }
-
-
-        #second {
+        #konteineris {
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            font-size: 20px;
             position: relative;
-            left: 92px;
-            top: 4px;
-            background: yellow;
-
-        }
-
-        #first {
-            background: blue;
-        }
-
-
-
-
-        #third {
-            position: relative;
-            top: -70px;
-            left: 40px;
-            background: red;
-        }
-
-        #problem {
-            font-size: 52pt;
-            color: white;
-            position: absolute;
-            width: 75px;
-            height: 75px;
-            border-left: 2px solid red;
-            border-top: 2px solid red;
-            top: 41px;
-            left: 71px;
-            z-index: -4;
-            background: red;
-        }
-
-        #problem:after {
-            position: absolute;
-            content: " ";
-            background: white;
-            width: 150px;
-            height: 150px;
-            top: -2px;
-            left: -2px;
-            border-radius: 50%;
-            z-index: -3;
-        }
-
-        .container {
-            width: 270px;
-            height: 270px;
             background-color: gray;
+            border: 1px solid black;
+        }
+
+        #r {
+            border-color: red;
+            background-color: rgb(252, 120, 120);
+            top:10px;
+            right:20%;
+
+        }
+
+        #g {
+            background-color: rgb(80, 206, 80);
+            border-color: green;
+            right:10px;
+            bottom:10px;
+        }
+
+        #b {
+            background-color: rgb(110, 110, 250);
+            border-color: blue;
+            bottom:10px;
+            left:10px;
+        }
+
+        #r,
+        #g,
+        #b {
+            border-radius: 100%;
+            text-align: center;
+            vertical-align: middle;
+            border-style: solid;
+            border-width: 5px;
+            width: 60%;
+            height: 60%;
+            position: absolute;
+            opacity: 0.8;
+        }
+
+        #span {
+            position: relative;
+
         }
     </style>
 </head>
 
 <body>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas nec velit a eleifend. Integer vitae risus vitae
-        lectus lobortis porta et eu eros. Etiam in volutpat elit. Etiam fringilla mattis mollis. Nunc ullamcorper dui diam,
-        ac malesuada augue consectetur quis. Curabitur quis tristique purus. Mauris feugiat mi nec volutpat sollicitudin.
-        Nam non ligula tincidunt, ultrices quam ac, porta enim. Quisque ut eleifend odio. Nam iaculis ipsum quis rhoncus
-        pharetra. Nam laoreet ligula congue quam aliquet elementum. Nulla ante eros, aliquam sit amet enim id, lacinia pretium
-        metus. Praesent vel ipsum elit. Donec efficitur lectus ipsum, vitae tincidunt nunc placerat id. Curabitur ac tincidunt
-        elit. Donec sit amet facilisis metus. Nulla maximus egestas dolor et ultrices. Sed nisl urna, pretium quis tincidunt
-        id, tristique non eros. Donec et mauris vulputate, scelerisque lacus sed, venenatis risus. Aenean consectetur erat
-        non enim placerat vestibulum. Nullam ut pellentesque dolor. Ut sagittis nisl nec lectus viverra aliquam.</p>
-    <div class=container>
-        <div id=first class=circle>R</div>
-        <div id=second class=circle>P</div>
-        <div id=third class=circle>G</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus dui sit amet libero accumsan dignissim. Vivamus tincidunt
+        sollicitudin blandit. Quisque auctor eu ex sit amet bibendum. Proin non risus ac mi semper tempus. Maecenas libero
+        justo, aliquet elementum molestie vitae, ornare id turpis. Suspendisse potenti. Donec vestibulum turpis est, sed
+        semper urna maximus ac. In hac habitasse platea dictumst. Vivamus mollis ligula vel risus scelerisque, ut tincidunt
+        ligula ornare. Nam quis leo lorem. Nullam faucibus, arcu convallis efficitur blandit, ligula mauris posuere arcu,
+        sed sollicitudin justo enim at lacus. Nulla ac nunc faucibus, viverra odio sit amet, sagittis tellus. Mauris eu nulla
+        vitae nisi auctor vestibulum sit amet ac odio. Cras at consequat mi, in pulvinar odio. Donec sapien diam, pellentesque
+        elementum nulla nec, lobortis laoreet neque. Vestibulum dapibus sodales erat, non auctor magna ullamcorper at. Mauris
+        nec ipsum eu orci euismod dignissim. Sed varius maximus sem sit amet dignissim. Sed ultrices nisl maximus, posuere
+        purus dapibus, consectetur lectus. Nulla enim neque, vehicula vitae libero ac, consequat imperdiet dolor. Nullam
+        efficitur, leo eu placerat viverra, turpis dolor mollis tortor, vitae iaculis lectus purus egestas nisl. Sed sollicitudin
+        mauris nunc. Morbi convallis dolor vitae metus suscipit tincidunt. Duis interdum volutpat porta. Nullam auctor diam
+        purus, eget convallis massa lacinia ut. Nam quis justo congue ligula ullamcorper varius.</p>
+    <div id=konteineris>
+        <div>
+            <span id=R>R</span>
+        </div>
+        <div>
+            <span id=G>G</span>
+        </div>
+        <div>
+            <span id=B>B</span>
+        </div>
     </div>
 </body>
 
