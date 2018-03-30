@@ -7,18 +7,18 @@
     <style>
         #konteineris {
             width: 50vw;
-            height: 50vh;
+            height: 50vw;
             margin: auto;
             font-size: 20px;
             position: relative;
             background-color: gray;
-            border: 1px solid black;
+            
         }
 
         #r {
             border-color: red;
             background-color: rgb(252, 120, 120);
-            top:10px;
+            top:5px;
             right:20%;
 
         }
@@ -26,15 +26,15 @@
         #g {
             background-color: rgb(80, 206, 80);
             border-color: green;
-            right:10px;
-            bottom:10px;
+            right:5px;
+            bottom:5px;
         }
 
         #b {
             background-color: rgb(110, 110, 250);
             border-color: blue;
-            bottom:10px;
-            left:10px;
+            bottom:5px;
+            left:5px;
         }
 
         #r,
@@ -49,11 +49,13 @@
             height: 60%;
             position: absolute;
             opacity: 0.8;
+            font-size: 18px;
         }
 
-        #span {
-            position: relative;
-
+        .tekstas {
+          position: relative;
+          top:50%;
+          transform: translateY(-50%);
         }
     </style>
 </head>
@@ -65,22 +67,16 @@
         semper urna maximus ac. In hac habitasse platea dictumst. Vivamus mollis ligula vel risus scelerisque, ut tincidunt
         ligula ornare. Nam quis leo lorem. Nullam faucibus, arcu convallis efficitur blandit, ligula mauris posuere arcu,
         sed sollicitudin justo enim at lacus. Nulla ac nunc faucibus, viverra odio sit amet, sagittis tellus. Mauris eu nulla
-        vitae nisi auctor vestibulum sit amet ac odio. Cras at consequat mi, in pulvinar odio. Donec sapien diam, pellentesque
-        elementum nulla nec, lobortis laoreet neque. Vestibulum dapibus sodales erat, non auctor magna ullamcorper at. Mauris
-        nec ipsum eu orci euismod dignissim. Sed varius maximus sem sit amet dignissim. Sed ultrices nisl maximus, posuere
-        purus dapibus, consectetur lectus. Nulla enim neque, vehicula vitae libero ac, consequat imperdiet dolor. Nullam
-        efficitur, leo eu placerat viverra, turpis dolor mollis tortor, vitae iaculis lectus purus egestas nisl. Sed sollicitudin
-        mauris nunc. Morbi convallis dolor vitae metus suscipit tincidunt. Duis interdum volutpat porta. Nullam auctor diam
-        purus, eget convallis massa lacinia ut. Nam quis justo congue ligula ullamcorper varius.</p>
+        vitae nisi auctor vestibulum sit amet ac odio. Cras at consequat mi, in pulvinar odio. Donec sapien diam, pellentesque</p>
     <div id=konteineris>
-        <div>
-            <span id=R>R</span>
+        <div id=R>
+            <span class=tekstas>R</span>
         </div>
-        <div>
-            <span id=G>G</span>
+        <div id=G>
+            <span class=tekstas>G</span>
         </div>
-        <div>
-            <span id=B>B</span>
+        <div id=B>
+            <span class=tekstas>B</span>
         </div>
     </div>
 </body>
