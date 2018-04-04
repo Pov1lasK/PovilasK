@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+    <style>
+        #container {
+            background-color: lightgray;
+            width: 50vw;
+            height: 50vw;
+            margin: auto;
+            position: relative;
+        }
+
+        .r,
+        .g,
+        .b {
+            width: 60%;
+            height: 60%;
+            font-size: 3em;
+            color: white;
+            border: 0.25em solid;
+            border-radius: 50%;
+        }
+
+        .g {
+            background-color: rgb(0, 128, 0, 0.5);
+            border-color: green;
+            position: absolute;
+            left: 0.25em;
+            bottom: 0.25em;
+        }
+
+        .b {
+            background-color: rgb(0, 0, 128, 0.5);
+            border-color: blue;
+            position: absolute;
+            right: 0.25em;
+            bottom: 0.25em;
+        }
+
+        .r {
+            background-color: rgb(128, 0, 0, 0.5);
+            border-color: red;
+            position: absolute;
+            top: 0.25em;
+            left: 20%;
+        }
+
+        .t {
+            text-align: center;
+            position: relative;
+            top: calc(50% - 0.5em);
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum dolor cursus ultrices cursus. Integer aliquam
+        at massa in scelerisque. Integer commodo feugiat ante. Vivamus consequat, eros at iaculis eleifend, quam nulla tincidunt
+        odio, in vehicula massa eros non arcu. Donec aliquet tortor purus, non auctor mi dignissim sit amet. Mauris tincidunt
+        pulvinar lectus, a viverra nulla. Aenean malesuada magna eu lacus volutpat, sit amet malesuada metus tristique. Nam
+        mattis euismod felis et euismod. Vivamus a magna ipsum. Morbi porta, tellus vel facilisis vulputate, augue risus
+        fringilla tellus, sit amet dignissim augue nibh id massa. Ut quis orci at massa ullamcorper fringilla et vitae nunc.
+        Nulla facilisi. Curabitur non nisl sed orci sodales fringilla. Phasellus commodo est vel magna posuere aliquet. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin accumsan erat a erat fringilla
+        lacinia. Mauris ac egestas felis, id volutpat diam. Maecenas placerat non nisi malesuada luctus. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Aliquam bibendum mollis sollicitudin. Mauris tincidunt vitae augue et vehicula.
+        Etiam hendrerit libero vitae nibh ultricies, vel tristique justo malesuada. Sed sit amet imperdiet tellus. Vivamus
+        id metus sit amet urna rhoncus feugiat id vitae eros. Etiam lacinia lacus vel laoreet tempus. Sed eget consequat
+        ex. Morbi ut porta eros.</p>
+    <div id="container">
+        <div class="r">
+            <div class="t">R</div>
+        </div>
+        <div class="g">
+            <div class="t">G</div>
+        </div>
+        <div class="b">
+            <div class="t">B</div>
+        </div>
+    </div>
+</body>
+
+</html>

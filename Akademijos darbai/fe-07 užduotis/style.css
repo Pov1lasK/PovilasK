@@ -1,0 +1,37 @@
+.r{
+  animation-name: raudona;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.g{
+  animation-name: zalia;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.b{
+  animation-name: melyna;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes raudona {
+  0%   {background-color:black; bottom:0; top:25;}
+  100% {background-color:rgb(128, 0, 0, 0.5); left:0.25em; top:20%;}
+}
+@keyframes melyna {
+  0%   {background-color:black; left:25; top:25;}
+  100% {background-color:rgb(0, 0, 128, 0.5); left:0.25em; top:0.25em;}
+}
+@keyframes zalia {
+  0%   {background-color:black; right:25; top:25;}
+  100% {background-color:rgb(0, 128, 0, 0.5); left:0.25em; top:0.25em;}
+}
