@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fe-09 užduotis</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+           body {
+                display:flex;
+                flex-direction:column;
+                background-color:mediumvioletred;
+                
+                
+            }
+            .header {
+                background-color:royalblue;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+            }
+            .tekstas {
+                display:flex;
+                flex-direction:column;
+                background-color:chartreuse;
+                height:70vh;
+                overflow:auto;
+            }
+            .reklama {
+                background-color:greenyellow;
+                display:flex;
+                justify-content: space-between;
+            }
+            .footer {
+                background-color:royalblue;
+                display:flex;
+                flex-direction:row;
+                vertical-align: middle;
+                justify-content:center;
+            }
+            .header, .footer {
+                height:8vh;
+            }
+            @media (max-width: 768px) {
+            body {
+                margin:0 0 0 5px;
+                width:100vw;
+                height:100vh;
+            }
+            .header {
+                padding-right:2em;
+            }
+            ul li {
+                display:none;
+            }
+            .bendras {
+                display:flex;
+                flex-direction:column;
+                height:84%;
+            }
+            .tekstas {
+                padding:1em;
+                margin-top:0.5em;
+                margin-right:2em;
+            }
+            .adv {
+                margin-right:2em;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .reklama {
+                display:inline-block;
+                height:14vh;
+                width:40vw;
+                margin:0.5em;
+
+                justify-content: center;
+            }
+            .footer {
+                margin-right:2em;
+            }
+            }
+            @media (min-width: 768px){
+                body {
+                    margin:1em;
+                    width:calc(100vw - 2em);
+                    height:calc(100vh - 2em);
+                }
+                .header {
+                    padding-right:2em;
+                }
+                .bendras {
+                    display:flex;
+                    flex-direction:row;
+                    width:100%;
+                    padding-top:1em;
+                    padding-bottom:1em;
+                    overflow:auto;
+                }
+                ul li {
+                display:inline-block;
+                }
+                .tekstas {
+                    width:80%;
+                    margin-right:1em;
+                }
+                .adv {
+                    width:20%;
+                }
+                .reklama {
+                    margin:1em 0 1em 0;
+                    height:20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+         <div class="header">
+            <ul id="meniu">meniu
+                <li >meniu1</li>
+                <li>meniu2</li>
+                <li>meniu3</li>
+                </ul>
+            <ul id="meniu4">meniu4</ul>
+        </div>
+        <div class="bendras">
+        <div class="tekstas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in suscipit diam. Nunc a aliquam purus, tempor faucibus turpis. Curabitur enim lectus, fringlila eget malesuada id, mattis aliquam massa. Phasellus scelerisque blandit finibus. Aenean et sem at nibh volutpat semper. In magna nulla, tincidunt quis purus vel, finibus gravida leo. Nam purus magna, commodo in risus sed, faucibus bibendum ipsum. Pellentesque viverra, elit ac lacinia vehicula, sapien nulla faucibus ipsum, nec porta metus dolor in odio.
+            In suscipit vestibulum condimentum. Aliquam id lorem elit. Aliquam eu sodales lacus. Quisque at finibus augue, id aliquet quam. Sed ut elit in purus bibendum congue in in dui. Maecenas ullamcorper malesuada mi. Duis blandit sollicitudin sodales. Aenean blandit purus at nulla sollicitudin, non consectetur tortor consectetur. Morbi a nibh vitae felis suscipit tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tellus tellus, laoreet pellentesque neque id, tempor porta lacus. Sed finibus ante leo, vitae scelerisque arcu tincidunt vitae. Praesent luctus, justo in aliquet interdum, risus velit interdum justo, nec ullamcorper velit ante quis libero.
+            Aenean sed orci nunc. Proin vehicula mauris orci, in rutrum augue fringlila eget. Pellentesque tempus mauris in magna dapibus, sit amet posuere nisl hendrerit. Aliquam vitae neque sed diam commodo congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempus tellus eu orci cursus, eget dapibus ex posuere. In mollis fringlila eros, ornare luctus tortor tristique vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce odio sapien, euismod eu turpis facliisis, consectetur porta lorem. Pellentesque ut pellentesque augue, in commodo nunc. Nunc vel turpis sodales, iaculis libero sit amet, efficitur libero. Suspendisse fermentum felis eget ex tempor, eu vehicula nisi maximus. Pellentesque iaculis auctor malesuada.
+            Ut enim mauris, feugiat in porta eget, dapibus nec felis. Maecenas luctus elit suscipit, tempus nisl sed, facliisis ligula. Nullam quis elementum nulla. Quisque quis dolor condimentum, tristique sapien non, blandit magna. Integer ornare, sapien eget ultrices tincidunt, purus neque fringlila arcu, quis mollis mi lectus sagittis urna. Integer eros sem, mollis non dictum vitae, viverra quis lacus. Praesent id vehicula dui. Sed eu enim vel eros faucibus bibendum. Nulla in sodales dui, ac sodales lectus. In augue justo, luctus sit amet arcu sit amet, laoreet semper justo. Aliquam convallis a ante eget suscipit. Nulla egestas efficitur volutpat. Integer sed odio sapien. Nunc eu arcu sed tortor interdum tempus gravida eget purus. Ut sit amet feugiat augue.
+            Nam consectetur nulla eu diam accumsan sollicitudin. Donec quis nulla ut nisi tincidunt porta vel sed purus. Integer dignissim aliquam scelerisque. Phasellus hendrerit nisl non tortor vestibulum, non blandit purus ornare. Phasellus in enim eu nulla venenatis suscipit eu pharetra neque. Sed pretium eros vel leo condimentum, et facliisis arcu scelerisque. Vivamus convallis sapien neque, et pharetra ligula tempus non. Aliquam dapibus rutrum finibus. Fusce id lectus sed felis pellentesque dapibus. Aenean et turpis elit. Donec ac elit dictum, iaculis justo sit amet, condimentum turpis.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in suscipit diam. Nunc a aliquam purus, tempor faucibus turpis. Curabitur enim lectus, fringlila eget malesuada id, mattis aliquam massa. Phasellus scelerisque blandit finibus. Aenean et sem at nibh volutpat semper. In magna nulla, tincidunt quis purus vel, finibus gravida leo. Nam purus magna, commodo in risus sed, faucibus bibendum ipsum. Pellentesque viverra, elit ac lacinia vehicula, sapien nulla faucibus ipsum, nec porta metus dolor in odio.
+            In suscipit vestibulum condimentum. Aliquam id lorem elit. Aliquam eu sodales lacus. Quisque at finibus augue, id aliquet quam. Sed ut elit in purus bibendum congue in in dui. Maecenas ullamcorper malesuada mi. Duis blandit sollicitudin sodales. Aenean blandit purus at nulla sollicitudin, non consectetur tortor consectetur. Morbi a nibh vitae felis suscipit tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tellus tellus, laoreet pellentesque neque id, tempor porta lacus. Sed finibus ante leo, vitae scelerisque arcu tincidunt vitae. Praesent luctus, justo in aliquet interdum, risus velit interdum justo, nec ullamcorper velit ante quis libero.
+            Aenean sed orci nunc. Proin vehicula mauris orci, in rutrum augue fringlila eget. Pellentesque tempus mauris in magna dapibus, sit amet posuere nisl hendrerit. Aliquam vitae neque sed diam commodo congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempus tellus eu orci cursus, eget dapibus ex posuere. In mollis fringlila eros, ornare luctus tortor tristique vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce odio sapien, euismod eu turpis facliisis, consectetur porta lorem. Pellentesque ut pellentesque augue, in commodo nunc. Nunc vel turpis sodales, iaculis libero sit amet, efficitur libero. Suspendisse fermentum felis eget ex tempor, eu vehicula nisi maximus. Pellentesque iaculis auctor malesuada.
+            Ut enim mauris, feugiat in porta eget, dapibus nec felis. Maecenas luctus elit suscipit, tempus nisl sed, facliisis ligula. Nullam quis elementum nulla. Quisque quis dolor condimentum, tristique sapien non, blandit magna. Integer ornare, sapien eget ultrices tincidunt, purus neque fringlila arcu, quis mollis mi lectus sagittis urna. Integer eros sem, mollis non dictum vitae, viverra quis lacus. Praesent id vehicula dui. Sed eu enim vel eros faucibus bibendum. Nulla in sodales dui, ac sodales lectus. In augue justo, luctus sit amet arcu sit amet, laoreet semper justo. Aliquam convallis a ante eget suscipit. Nulla egestas efficitur volutpat. Integer sed odio sapien. Nunc eu arcu sed tortor interdum tempus gravida eget purus. Ut sit amet feugiat augue.
+            Nam consectetur nulla eu diam accumsan sollicitudin. Donec quis nulla ut nisi tincidunt porta vel sed purus. Integer dignissim aliquam scelerisque. Phasellus hendrerit nisl non tortor vestibulum, non blandit purus ornare. Phasellus in enim eu nulla venenatis suscipit eu pharetra neque. Sed pretium eros vel leo condimentum, et facliisis arcu scelerisque. Vivamus convallis sapien neque, et pharetra ligula tempus non. Aliquam dapibus rutrum finibus. Fusce id lectus sed felis pellentesque dapibus. Aenean et turpis elit. Donec ac elit dictum, iaculis justo sit amet, condimentum turpis.</div>
+        <div class="adv">
+            <div class="reklama">1</div>
+            <div class="reklama">2</div>
+            <div class="reklama">3</div>
+            <div class="reklama">4</div>
+        </div>
+        </div>
+        <div class="footer">Kontaktai</div>
+    </body>
+</html>
