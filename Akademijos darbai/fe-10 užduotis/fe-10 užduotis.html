@@ -8,6 +8,9 @@
         crossorigin="anonymous">
     <title>fe-10 užduotis</title>
     <style>
+        .navbar {
+            border-bottom: 1px solid black;
+        }
 
 
         .form-group {
@@ -20,32 +23,48 @@
         }
 
         .forma {
-            margin: 1rem auto;
+            margin: 1em auto;
             width: 40vw;
             border: 1px solid rgb(200, 201, 202);
-            padding: 1rem;
+            padding: 1em;
+            
         }
         .forma .btn {
             font-size: 1rem;
-            background-color: rgb(0, 255, 170);
+            background-color: rgb(101, 179, 153);
             color: white;
         }
         /* tarpai */
         .forma input {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.5em;
         }
-        .forma a {
-            color: rgb(31, 175, 127);
-        }
+
         .forma .form-header {
             border-bottom: 1px solid rgb(88, 88, 88);
         }
 
 
         .zalia {
-            background-color: rgb(0, 255, 170);
+            background-color: rgb(101, 179, 153);
             color: white;
-            padding: 2rem 3rem;
+            height:10em;
+        }
+
+        .pilka {
+            background-color:rgb(88, 88, 88);
+            color:white;
+            height: 14.3em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .btn-lg {
+            background-color:rgb(101, 179, 153)
+        }
+        .btn-primary {
+            float: right;
+            position: relative;
+            right: 5em;
         }
 
     </style>
@@ -57,18 +76,17 @@
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="ayy.svg" width="40" height="40" class="d-inline-block align-middle" alt=""> AppStrap.
-
-                <div class="container">
+                
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <!-- <a class="navbar-brand" href="#"><i class="material-icons"></i></a> -->
+                        <img src="home.svg" width="40" height="40" class="d-inline-block align-middle" alt="">
                         <a class="navbar-brand" href="#">Pages</a>
                         <a class="navbar-brand" href="#">Features</a>
                         <a class="navbar-brand" href="#">Shop</a>
                         <a class="navbar-brand" href="#">Elements</a>
                         <a class="navbar-brand" href="#">Mega menu</a>
-                        <!-- <a class="nav-link" href="#"><i class="material-icons"></i></a> -->
+                        <img src="search.svg" width="40" height="40" class="d-inline-block align-middle" alt="">
                     </nav>
-                </div>
+                
             </a>
         </nav>
     </div>
@@ -93,6 +111,41 @@
     </div>
 <!-- zalia balta -->
 <div class="zalia">
+    <div id=tekstas>
+        <h1>AWESOME FEATURES</h1>
+        <span>99.99% Uptime / Free upgrades / Fully responsive / Bug Free</span>
+        <button type="button" class="btn btn-primary btn-lg"> Get AppStrap Today-></button>
+    </div>
+
+</div>
+<!-- pilka juosta -->
+<div class="pilka">
+    <div>
+            <h2>CONTACT US</h2>
+            <span>019223 8092355</span> <br>
+            <span>info@appstraptheme.com</span> <br>
+            <span>Sunshine House, Sunville.SUN12 8LU.</span>
+    </div>
+
+    <Div>
+        <h2>ABOUT US</h2>
+        <span>Making the web a prettier place one template</span> <br>
+        <span>at a time! We make beautiful, quality,</span> <br>
+        <span>responsive Drupal & web templates!</span>
+    </Div>
+    <div>
+        <h2>NEWSLETTER</h2>
+        <span>Stay up to date with our latest news and</span> <br>
+        <span>product releases by signing up to our</span> <br>
+        <span>newsletter.</span>
+        <div class="col-lg-12">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+    </div>
+</div>
 
 </body>
 
