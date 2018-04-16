@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS rectangle</title> 
+    </head>
+    <body>
+        <h1>Opce</h1>
+        <canvas id="myCanvas" width="300" height="150" ></canvas>
+        <script>
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.rect(20, 20, 150, 100);
+ctx.stroke();
+
+        
+var width = prompt("Įveskite plotį");
+var height = prompt("Įveskite aukštį");
+document.write("<br>");
+document.write("Plotis " + width);
+document.write("<br>");
+document.write("Aukštis " + height);
+document.write("<br>");
+var perimeter = (width + height) * 2 ;
+var area = width * height;
+var diagonal = Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2) );
+document.write ("Perimetras " + perimeter);
+document.write("<br>");
+document.write ("Plotas "+ area);
+document.write("<br>"); 
+document.write ("Įstrižainė " + diagonal);
+</script>
+    </body>
+</html>
