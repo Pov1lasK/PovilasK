@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var fs = require("fs");
+
+//to remove "" from arrays inside of lines; see line 27
+Array.prototype.clean = function(deleteValue) {
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == deleteValue) {
+      this.splice(i, 1);
+      i--;
+    }
+  }
+  return this;
+};
+
+fs.readFile("triangle.txt", function(err,data){
+  if (err){
+    return console.log(err)
+  }
+
+//divide the file into each line
+  var lines = data.toString().replace(/(\r)/g,"").split("\n");
+
+//make each element of the line into elements of an array
+ var lines_arr = []
+
+  lines.forEach(function(elem) {
+    new_elem = elem.split(" ")
+    new_elem.clean("")
+    lines_arr.push(new_elem)
+  })
+
+// to determine which number is larger
+  function larger(a,b){
+    if (a === undefined){
+      return 0
+    }
+    else if (b === undefined){
+      return a
+    }
+    else if (a >= b){
+      return a
+    } else {
+      return b
+    }
+  }
+
+var largest_sum = 0, //keep track of the largest possible sum
+sum_obj = {}, // an object that will have each line's largest num
+sum_num_arr = [], //an array that will keep the largest nums in each line (that are adjacent)
+last_index = 0;  // to keep track of the adjacent index
+
+//this loop goes through each line and adds the largest adj num to largest_sum
+  for (var i = 0; i < lines_arr.length ; i++){
+    //for the first line
+    if (lines_arr[i][last_index + 1] === undefined){
+      largest_sum += parseInt(lines_arr[i][last_index])
+      sum_num_arr.push(parseInt(lines_arr[i][last_index]))
+    }
+    else {
+      var larger_num = larger(parseInt(lines_arr[i][last_index]), parseInt(lines_arr[i][last_index + 1]))
+      largest_sum += larger_num;
+      last_index = lines_arr[i].indexOf(larger_num.toString())
+      sum_num_arr.push(larger_num)
+    }
+  }
+
+  sum_obj[largest_sum] = sum_num_arr
+  console.log("The largest possible sum is, " , largest_sum) //665321
+  console.log(sum_obj)
+
+})
+
+
+
+    </script>
+</body>
+</html>

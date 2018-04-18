@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+    <script> 
+        var A = parseInt(prompt("Trikampio krastine 1?"));
+        var B = parseInt(prompt("Trikampio krastine 2?"));
+        var C = parseInt(prompt("Trikampio krastine 3?"));
+        document.write(A + "<br>");
+        document.write(B + "<br>");
+        document.write(C + "<br>");
+        if (A < B + C && B < A + C && C < B + C) {
+            if (A === B && B === C) {
+                document.write("<br>" + "Lygiakraštis");
+            } else if (A === B || A === C) {
+                document.write("<br>" + "Lygiašonis");
+            } else if (A !== B && B !== C) {
+                document.write("<br>" + "Įvairiakraštis");
+            } else if (A ** A == B * B + C * C || B ** B == A * A + C * C || C ** C == B * B + A * A) {
+                document.write("<br>" + "statusis");
+            }
+        } else {
+            document.write("<br>" + "Trikampis nesigauna");
+        }
+
+    </script>
+</body>
+</html>
