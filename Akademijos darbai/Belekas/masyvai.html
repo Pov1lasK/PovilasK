@@ -46,6 +46,13 @@
 
             tekstas +=
                 '<tr>' +
+                //budas kaip atlikti tapati su "function"
+                    // stulpelis(auto[i][0])+
+                    // stulpelis(auto[i][0])+
+                    // stulpelis(auto[i][0])+
+                    // stulpelis(auto[i][0])+
+                    // stulpelis(auto[i][2] / auto[i][3] * 3.6)+
+
                     '<td>' + auto[i][0] + '</td>' +
                     '<td>' + auto[i][1] + '</td>' +
                     '<td>' + auto[i][2] + '</td>' +
@@ -54,6 +61,11 @@
                 '</tr>';
         }
         document.querySelector('tbody').innerHTML = tekstas;
+
+        function stulpelis(reiksme) {
+            var td = '<td>' + reiksme + '</td>';
+            return td;
+        }
     </script>
 </body>
 
