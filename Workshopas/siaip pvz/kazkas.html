@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var auto = [
+            ['2018-01-01', 'FFF023', 500, 100],
+            ['2018-01-02', 'HDR024', 800, 90],
+            ['2018-01-03', 'ABC025', 1000, 100],
+            ['2018-01-03', 'ABC025', 1000, 110],
+            ['2018-01-03', 'ABC025', 1000, 150],
+            ['2018-01-03', 'ABC025', 1000, 60],
+            ['2018-01-03', 'ABC025', 1000, 155],
+            ['2018-01-03', 'ABC025', 1000, 80],
+            ['2018-01-03', 'ABC025', 1000, 90],
+            
+        ];
+
+        var lentele = '';
+        auto.forEach(a => {
+            lentele +=
+            '<tr>' +
+                '<td>' + a[0]+ '</td>'
+                '<td>' + a[1]+'</td>'
+                '<td>' + a[2]+ '</td>'
+                '<td>' + a[3]+'</td>'
+            '</tr>';
+        });
+
+        document.getElementById(a).innerHTML=lentele;
+    
+    </script>
+</body>
+</html>
