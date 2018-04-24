@@ -1,0 +1,14 @@
+#A {
+    width: 200px;
+    height: 200px;
+    background-color:rgb(51, 51, 221);
+    transition-duration: 1s;
+}
+
+.B {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition-duration: 1s;
+    background-color: rgb(140,50,30);
+}

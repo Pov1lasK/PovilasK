@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .redSquare {
+        background-color: rgb(85, 233, 40);
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        transition-duration: 1s;
+    }
+
+    .greenCircle {
+        background-color: rgb(129, 70, 168);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+        transition-duration: 1s;
+    }
+</style>
+
+<body>
+    <div id="figura" class="redSquare"></div>
+    <script>
+        var daiktas = document.getElementById("figura");
+        daiktas.onclick = click;
+        
+        function clickCount(x) {
+            if (x%2 != 0){
+                daiktas.classList.add("greenCircle");
+            } else {
+                daiktas.classList.remove("greenCircle");
+            }
+        }
+
+        function click() {
+            if(localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            }else {
+                localStorage.clickcount = 1;
+            }
+            clickCount(localStorage.clickcount);
+        }
+        document.onload = clickCount(localStorage.clickcount);
+    </script>
+</body>
+
+</html>
