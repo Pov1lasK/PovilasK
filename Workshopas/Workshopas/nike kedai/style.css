@@ -88,6 +88,143 @@ header .topWrapper .rightSide {
     font-size: 16px;
 }
 
+.heart {
+    border: #e4e4e4 1px solid;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 43px;
+    /* jeigu norim atvaizduoti tevini elementas tai jis turi buti bet kokios pozicijos tik ne STATIC!!!!! */
+}
+
+.heart img {
+    vertical-align: middle;
+}
+
+header .rightSide h3 {
+    color:#333333;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+header .rightSide h2 {
+    color:#333333;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+header .rightSide .price {
+    margin-bottom: 27px;
+    font-size: 18px;
+    color: #666666;
+}
+
+header .rightSide .colors {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+header .rightSide .colors span {
+    color:#0089cf;
+}
+
+header .rightSide .box {
+    border: 1px solid #e4e4e4;
+    background-color: #f7f7f7;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+header .rightSide .box img {
+    width: 90%;
+    height:auto;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-30%);
+    filter: grayscale(100%);
+}
+
+header .rightSide .box.selected img {
+    filter:none;
+}
 
 
+header .rightSide label {
+    font-size: 12px;
+    color: #666666;
+    
+    display: block;
+}
 
+header .rightSide select {
+    appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 0px;
+    background-color:transparent;
+    padding: 20px;
+    width: 120px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    outline: none;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 100px center;
+}
+
+header .rightSide button {
+    padding: 21px;
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    font-size: 14px;
+    border:none;
+    margin-top: 15px;
+}
+
+.feat1 {
+    background-image: url(images/feat1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 260px 50px;
+    color:#fff;
+}
+
+.feat1 h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.feat1 p {
+    font-size: 14px;
+    line-height: 1.78;
+    max-width: 420px;
+    text-align: justify;
+}
+
+.feat2 {
+    background-color: #f5f5f5;
+    margin: 50px;
+}
