@@ -1,0 +1,194 @@
+# Translation of Themes - Hitchcock in Lithuanian
+# This file is distributed under the same license as the Themes - Hitchcock package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-16 19:01:39+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: lt\n"
+"Project-Id-Version: Themes - Hitchcock\n"
+
+#. Theme Name of the plugin/theme
+msgid "Hitchcock"
+msgstr "Tema \"Hitchcock\""
+
+#: single.php:104
+msgid "Previous"
+msgstr "Ankstesnis"
+
+#: single.php:94 single.php:104
+msgid "Post"
+msgstr "Įrašas"
+
+#: single.php:94
+msgid "Next"
+msgstr "Pirmyn"
+
+#: single.php:71
+msgid "In"
+msgstr " "
+
+#: search.php:50
+msgid "No results. Try again, would you kindly?"
+msgstr "Nieko nerasta. Bandykite ieškoti dar kartą."
+
+#: search.php:9 search.php:37
+msgid "Search Results"
+msgstr "Paieškos rezultatai"
+
+#: page.php:62 single.php:128
+msgid "We couldn't find any posts that matched your query. Please try again."
+msgstr "Šiai užklausai rezultatų nėra. Bandykite ieškoti dar kartą. "
+
+#: page.php:48
+msgid "Edit Page"
+msgstr "Redaguoti puslapį"
+
+#: page.php:40 single.php:55
+msgid "Pages:"
+msgstr "Puslapiai:"
+
+#: index.php:17
+msgid "Page %s of %s"
+msgstr "Puslapis %s iš %s"
+
+#: header.php:47 searchform.php:2
+msgid "Search Form"
+msgstr "Paieškos laukas"
+
+#: functions.php:471
+msgid "Accent Color"
+msgstr "Akcento spalva"
+
+#: functions.php:445
+msgid "Upload a logo to replace the default site title in the sidebar/header"
+msgstr "Įkelkite logotipą, kuris antraštėje bus naudojamas vietoje svetainės pavadinimo."
+
+#: functions.php:443 functions.php:479
+msgid "Logo"
+msgstr "Logotipas"
+
+#: functions.php:416
+msgid "Your comment is awaiting moderation."
+msgstr "Jūsų komentaras laukia patvirtinimo."
+
+#: functions.php:405
+msgid "Reply"
+msgstr "Atsakymas"
+
+#: functions.php:388
+msgid "Post Author"
+msgstr "Įrašo autorius(-ė)"
+
+#: functions.php:370 functions.php:412
+msgid "Edit"
+msgstr "Redaguoti"
+
+#: functions.php:370
+msgid "Pingback:"
+msgstr "Atgalinis pranešimas"
+
+#: functions.php:52
+msgid "Social Menu"
+msgstr "Socialinių nuorodų meniu"
+
+#: functions.php:51
+msgid "Primary Menu"
+msgstr "Pagrindinis meniu"
+
+#: footer.php:4
+msgid "Theme by"
+msgstr "Temą sukūrė"
+
+#: content.php:9
+msgid "Sticky"
+msgstr "Prilipintas"
+
+#: comments.php:114
+msgid "Website"
+msgstr "Interneto svetainėje"
+
+#: comments.php:108
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:102
+msgid "Name"
+msgstr "Vardas"
+
+#: comments.php:84
+msgid "Leave a Reply"
+msgstr "Komentarų: 0"
+
+#: comments.php:65
+msgid "Newer"
+msgstr "naujesni"
+
+#: comments.php:59
+msgid "Older"
+msgstr "Senesni"
+
+#: comments.php:41
+msgid "Pingback"
+msgid_plural "Pingbacks"
+msgstr[0] "Atgalinis pranešimas:"
+msgstr[1] "Atgaliniai pranešimai:"
+msgstr[2] "Atgalinių pranešimų:"
+
+#: comments.php:21 comments.php:94
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Komentaras"
+msgstr[1] "Komentarai"
+msgstr[2] "Komentarų"
+
+#: archive.php:33
+msgid "Archive"
+msgstr "Archyvuoti"
+
+#: archive.php:28
+msgid "Author"
+msgstr "Autorius"
+
+#: archive.php:24
+msgid "Tag"
+msgstr "Gairė"
+
+#: archive.php:20
+msgid "Category"
+msgstr "Kategorija"
+
+#: archive.php:16
+msgid "Year"
+msgstr "Metai"
+
+#: archive.php:12
+msgid "Month"
+msgstr "Mėnesis"
+
+#: archive.php:8
+msgid "Date"
+msgstr "Data"
+
+#: 404.php:19
+msgid "It seems like you have tried to open a page that doesn't exist. It could have been deleted, moved, or it never existed at all. You are welcome to search for what you are looking for with the form below."
+msgstr "Jūs bandėte atidaryti neegzistuojantį puslapį, kuris galėjo būti ištrintas, perkeltas, ar niekada nesukurtas. Pasinaudokite žemiau esančia paieška, norėdami rasti ieškomą puslapį."
+
+#: 404.php:11
+msgid "Error 404"
+msgstr "Puslapis nerastas"
+
+#. Author URI of the plugin/theme
+msgid "http://www.andersnoren.se"
+msgstr "http://www.andersnoren.se"
+
+#. Author of the plugin/theme
+msgid "Anders Norén"
+msgstr "Anders Norén"
+
+#. Theme URI of the plugin/theme
+msgid "http://www.andersnoren.se/teman/hitchcock-wordpress-theme/"
+msgstr "http://www.andersnoren.se/teman/hitchcock-wordpress-theme/"
