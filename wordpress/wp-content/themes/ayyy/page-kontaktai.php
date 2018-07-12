@@ -1,7 +1,10 @@
-<?php get_header(); ?>
+<?php /*
+Template Name: Kontaktai
+Description: A Page Template for custom page.
+*/
+get_header(); ?>
 
-<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-
+			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 	<div id="main-content" class="visual-container">
 		<div class="container">
@@ -15,10 +18,7 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-<?php endwhile; endif; ?>
+				
+			<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

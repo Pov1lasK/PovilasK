@@ -119,7 +119,7 @@ function get_core_checksums( $version, $locale ) {
 				__( 'https://wordpress.org/support/' )
 			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
-		);
+			);
 		$response = wp_remote_get( $http_url, $options );
 	}
 

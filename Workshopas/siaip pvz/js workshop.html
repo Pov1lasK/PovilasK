@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šachmatai</title>
+    <style>
+    
+        .langelis {
+            width: 64px;
+            height: 64px;
+            border: 1px solid black;
+            margin: 0;
+            background:#fff;
+            display: inline-block;
+        }
+
+        #lenta {
+            font-size : 0px;
+        }
+        
+        .eilute.odd .langelis.odd {background-color: #000 }
+        .eilute.even .langelis.even {background-color: #000}
+    </style>
+</head>
+<body>
+
+    <div id="lenta"></div>
+    <script>
+            var game = {
+                boardParams: {
+                    width: 8,
+                    height: 8
+                },
+    
+                figures: [
+                    { type: "Q", pos: "A1" },
+                    { type: "Q", pos: "A2" },
+                    { type: "Q", pos: "A3" },
+                    { type: "Q", pos: "E2" },
+                ],
+    
+                collisions: [
+                    [ "A1", "A2", "A3" ],
+                    [ "A2", "E2" ],
+                ]
+            };
+    
+            /* var myJSON = JSON.stringify(game); */
+    
+            function elm(name) {
+                return document.getElementById(name);
+            }
+            function newElem(name) {
+                return document.createElement(name);
+            }
+            
+            const lenta = document.getElementById('lenta');
+    
+            for ( let y = 1; y <= game.boardParams.height; y++ ) {
+                //piesiu eilute nr. y
+                let eilute = newElem("div");
+                lenta.appendChild(eilute);
+                eilute.classList.add(
+                    y % 2 ? "odd" : "even" //lyginis nelyginis
+                );
+                eilute.classList.add(
+                    "eilute" //lyginis nelyginis
+                );
+                for ( let x = 1; x <= game.boardParams.width; x++ ) {
+                //piesiu eilute nr. X
+                let langelis = newElem("div");
+                eilute.appendChild(langelis);
+                langelis.classList.add(
+                    x % 2 ? "odd" : "even" //lyginis nelyginis
+                );
+                langelis.classList.add(
+                    "langelis" //lyginis nelyginis
+                );
+                langelis.classList.add (
+                    "langelis" + String.fromCharCode (x+"A".charCodeAt(0))+x //lyginis nelyginis
+                );
+            }
+            }
+
+            for ( let i=0; i<game.figures.length; i++){
+                let figure = game.figures[i];
+                let l = document.getElementsByClassName ("langelis");
+                console.log(l);
+                for (let j=0; l.length; j++){
+                    l[j].innerHTML = figures[i].type
+                }
+                // document.getElementsByClassName ("langelis"+figures[i].pos);
+            }
+        </script>
+</body>
+</html>
